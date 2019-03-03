@@ -1,0 +1,553 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/ProximaNova-Regular.eot');
+    src: local('../fonts/Proxima Nova Regular'), local('ProximaNova-Regular'),
+    url('fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova-Regular.woff') format('woff'),
+    url('fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('fonts/ProximaNova-Light.eot');
+    src: local('../fonts/Proxima Nova Light'), local('ProximaNova-Light'),
+    url('fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova-Light.woff') format('woff'),
+    url('fonts/ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/ProximaNova-Bold.eot');
+    src: local('../fonts/Proxima Nova Bold'), local('ProximaNova-Bold'),
+    url('fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNova-Bold.woff') format('woff'),
+    url('fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Proxima Nova Rg';
+    min-width: 1326px;
+}
+
+.header {
+    height: 130px;
+}
+
+.wrapper {
+    width: 1326px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+
+}
+
+
+.header-menu li {
+    display: inline-block;
+}
+
+.header-menu a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 17px 13px 17px;
+    border: 1px solid transparent;
+}
+
+.header-menu {
+    line-height: 130px;
+    float: right;
+}
+
+.header-menu a:hover {
+    border-bottom: 1px solid white;
+}
+
+.header-logo {
+    margin: 47px 0 0 0;
+}
+
+b {
+    font-weight: bold;
+}
+
+l {
+    font-family: 'Proxima Nova Lt';
+}
+
+.dronezone-main {
+    height: 1080px;
+    background-image: url(image/head-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    margin-top: -130px;
+}
+
+.dronezone-block-wrap {
+    width: 558px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 304px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.info {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 30px 0 65px 0;
+    line-height: 1.5;
+}
+
+.btn {
+    height: 48px;
+    width: 203px;
+    display: inline-block;
+    font-family: 'Proxima Nova Lt';
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    line-height: 50px;
+    padding: 0;
+}
+
+.btn-play {
+    height: 48px;
+    width: 203px;
+    display: inline-block;
+    font-family: 'Proxima Nova Lt';
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    line-height: 50px;
+    padding: 0;
+}
+
+
+.float-right::before {
+    content: '';
+    border: 15px solid transparent;
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+    border-left-color: #fff4f4;
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 13px 0 0 -30px;
+}
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.main-btns {
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #d32721;
+    background-color: #fff;
+}
+.blue-btn:hover {
+    cursor: pointer;
+    color: blue;
+    background: white ;
+    z-index: 111;
+}
+.btn-play:hover {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.scroll-block {
+    width: 72px;
+    height: 45px;
+    background-image: url(image/scroll-mouse.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    display: block;
+}
+
+.scroll-text {
+    padding-top: 17px;
+    font-size: 14px;
+    font-family: 'Proxima Nova Lt';
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.scroll-block-wrap {
+    width: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 383px;
+}
+
+
+.content {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1326px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 450px;
+    background: #f6f6f6;
+
+}
+.wrap-fi4i {
+    background-color:#f6f6f6 ;
+    height: 600px;
+}
+.drone {
+    margin-top: 135px;
+    width: 328px;
+    height: 287px;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+
+}
+.drone1 {
+    margin-top: 115px;
+    width: 328px;
+    height: 252px;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+}
+.propeller {
+    margin-top: 128px;
+    width: 328px;
+    height: 252px;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+
+}
+.control {
+    margin-top: 115px;
+    width: 328px;
+    height: 252px;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+}
+
+.drone-text {
+    margin-top: 40px;
+    background: -webkit-linear-gradient(75deg, #f06, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
+    color: #d32721;
+}
+.drone-text2 {
+    margin-top:19px;
+    background: -webkit-linear-gradient(75deg, #f06, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
+    color: #d32721;
+}
+.drone-text3 {
+    margin-top: 20px;
+    background: -webkit-linear-gradient(75deg, #f06, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
+    color: #d32721;
+}
+.drone-text4 {
+    margin-top: 21px;
+    background: -webkit-linear-gradient(75deg, #f06, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
+    color: #d32721;
+}
+.der {
+    width: 318px;
+    margin-top: 26px;
+    color: #5e6372;
+    font-size: 18px;
+    line-height: 2;
+
+}
+.blue-btn {
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, #264699, #4964a9);
+    height: 48px;
+    width: 203px;
+    display: block;
+    font-family: 'Proxima Nova Lt';
+    border: 1px solid #264699;
+    color: white;
+    border-radius: 50px;
+    line-height: 50px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.button3 {
+    margin-top: 453px;
+}
+.nature {
+    background-image: url("image/Dron-kopt.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    height: 690px;
+}
+.nature-wrapp {
+    width: 700px;
+}
+.dronezone-block-wrap {
+    width: 960px;
+    height: 570px;
+}
+.descr-block {
+    height: 266px;
+    width: 960px;
+}
+
+.column {
+    width: 455px;
+}
+
+.column-item {
+    padding-bottom: 60px;
+}
+.float-rights {
+    float: right;
+}
+.column-info {
+    float: right;
+    width: 375px;
+    color: #a7acbc;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #3f4e76;
+    font-size: 24px;
+    border: 2px solid #c7cde0;
+}
+
+.nature-color {
+    background: -webkit-linear-gradient(left, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 120px;
+    width: 420px;
+}
+.nature-color-description{
+    padding: 32px 0 65px 0;
+    font-size: 18px;
+    color: #5e6372;
+    width: 825px;
+    line-height: 40px;
+}
+.article {
+    height: 640px;
+    background-color: #f6f6f6;
+}
+.nature-ocean {
+    background-image: url("image/foto-top.jpg");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+
+}
+.article-wrap {
+    width: 585px;
+}
+
+.article-wrap p {
+    padding: 36px 0 60px 0;
+}
+
+.article-wrap .blue-btn{
+    float: left;
+}
+
+.article-wrap h2{
+    background: -webkit-linear-gradient(left, red, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 175px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #cb0035;
+    width: 420px;
+}
+
+.description {
+    color: #5e6372;
+    font-size: 18px;
+    line-height: 2;
+}
+.city {
+    background-image: url(image/foto-bottom.jpg);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: 100%;
+}
+.contact-us {
+    font-weight: bold;
+    padding: 192px 0 160px 0;
+    background:linear-gradient(to top, rgba(255,0,18,0.8), rgba(255,255,0,0.3)), url("image/Layer-5.jpg") 50% 50% no-repeat ;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.contact-us h2 {
+    font-size: 38px;
+    font-weight: bold;
+    padding-bottom: 30px;
+
+}
+.contact-us-form {
+    font-size: 0;
+
+}
+.contact-us-text{
+    background: none;
+    opacity: 0.7;
+    height: 54px;
+    font-size: 18px;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    outline: none;
+    width: 260px;
+    padding-left: 20px;
+    border-radius: 100px 100px 100px  100px;
+    border: 1px solid white;
+    font-weight: bold;
+}
+ input::-webkit-input-placeholder {color: white;}
+.contact-us-buttom {
+    position: relative;
+    background: white;
+    color: red;
+    font-size: 18px;
+    width: 135px;
+    border: none;
+    height: 54px;
+    display: inline-block;
+    border-radius: 100px 100px 100px 100px;
+    margin-left: -50px;
+    cursor: pointer;
+}
+.maps {
+    height: 603px;
+    background-size: cover;
+    background-image: url("image/map-pin.png");
+
+}
+.wrap-map {
+    width: 1326px;
+    margin-right: auto;
+    margin-left: auto;
+    background-position: 50% 100%;
+    padding: 0 10px;
+}
+
+.footer {
+    height: 200px;
+    background: #ffffff;
+    line-height: 2;
+}
+.text-footer {
+    text-align: center;
+    padding-top: 65px;
+    color: #bfc3ce;
+    font-size: 18px;
+}
+.color-text {
+    color: #a7acbc;
+    font-weight: bold;
+}
+.city-imgs img {
+    width: 649px;
+}
+
